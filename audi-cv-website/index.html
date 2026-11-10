@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV Digital Audi Kristina Panjaitan - Mahasiswa Sistem Informasi Bisnis AMIK Universal Medan.">
+  <meta name="theme-color" content="#6257d9">
+  <title>CV Digital | Audi Kristina Panjaitan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- LOGIN PAGE -->
+    <section class="login-screen" id="loginScreen">
+      <div class="login-decoration decoration-one"></div>
+      <div class="login-decoration decoration-two"></div>
+
+      <div class="login-layout">
+        <div class="login-intro">
+          <div class="brand-mark">A<span>.</span></div>
+          <p class="eyebrow">DIGITAL PERSONAL PROFILE</p>
+          <h1>Every journey<br>starts with a <span>login.</span></h1>
+          <p class="intro-copy">Selamat datang di ruang personal Audi Kristina Panjaitan. Silakan masuk untuk melihat curriculum vitae dan perjalanan akademiknya.</p>
+          <div class="intro-note"><span class="note-dot"></span> Personal CV • AMIK Universal Medan</div>
+        </div>
+
+        <div class="login-card">
+          <div class="card-topline"><span>WELCOME BACK</span><span class="lock-icon">✳</span></div>
+          <h2>Sign in</h2>
+          <p class="card-subtitle">Masukkan informasi akun untuk melanjutkan.</p>
+
+          <form id="loginForm">
+            <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
+            <div class="input-wrap">
+              <span class="input-icon">▤</span>
+              <input id="nim" name="nim" type="text" placeholder="Masukkan NIM" autocomplete="username" required>
+            </div>
+
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <span class="input-icon">⌑</span>
+              <input id="password" name="password" type="password" placeholder="Masukkan password" autocomplete="current-password" required>
+              <button class="toggle-password" type="button" id="togglePassword" aria-label="Tampilkan password">Lihat</button>
+            </div>
+
+            <label for="program">Pilihan Program Studi</label>
+            <div class="input-wrap select-wrap">
+              <span class="input-icon">▦</span>
+              <select id="program" name="program" required>
+                <option value="" disabled selected>Pilih jenjang</option>
+                <option value="D3">D3</option>
+                <option value="D4">D4</option>
+              </select>
+            </div>
+
+            <p class="login-error" id="loginError" role="alert"></p>
+            <button class="login-button" type="submit">Masuk ke CV <span>↗</span></button>
+          </form>
+
+          <div class="demo-credentials">
+            <div class="demo-heading"><span>ⓘ</span> INFORMASI AKUN DEMO</div>
+            <div class="credential-row"><span>NIM</span><strong>2024140003</strong></div>
+            <div class="credential-row"><span>Password</span><strong>Panjaitan07</strong></div>
+            <p>Halaman ini merupakan simulasi login untuk keperluan demonstrasi.</p>
+          </div>
+          <p class="login-footer">© <span id="loginYear"></span> Audi Kristina Panjaitan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV PAGE -->
+    <section class="cv-screen hidden" id="cvScreen">
+      <nav class="navbar">
+        <a class="nav-brand" href="#home" aria-label="Audi Portfolio">A<span>.</span></a>
+        <div class="nav-links">
+          <a href="#about">Tentang</a>
+          <a href="#education">Pendidikan</a>
+          <a href="#experience">Pengalaman</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <button class="logout-button" id="logoutButton">Logout <span>↗</span></button>
+      </nav>
+
+      <div class="cv-container">
+        <section class="hero-section" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> PERSONAL CURRICULUM VITAE</p>
+            <h1>Hi, I'm<br><span>Audi Kristina<br>Panjaitan.</span></h1>
+            <p class="hero-role">Mahasiswa D4 Sistem Informasi Bisnis</p>
+            <p class="hero-description">Saya memiliki ketertarikan pada teknologi informasi dan administrasi bisnis, serta semangat untuk terus belajar, beradaptasi, dan mengembangkan kemampuan diri.</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#about">Kenali Saya <span>↓</span></a>
+              <a class="text-link" href="#contact">Hubungi saya ↗</a>
+            </div>
+            <div class="hero-meta">
+              <span>AMIK UNIVERSAL MEDAN</span><span class="meta-separator">/</span><span>SISTEM INFORMASI BISNIS</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="photo-orbit orbit-one"></div>
+            <div class="photo-orbit orbit-two"></div>
+            <div class="photo-frame">
+              <img src="assets/profile.jpg" alt="Foto profil Audi Kristina Panjaitan" class="profile-photo">
+            </div>
+            <div class="photo-caption"><span class="caption-star">✳</span><span>Curious mind.<br>Continuous growth.</span></div>
+            <div class="floating-chip">D4 · SIB</div>
+          </div>
+          <div class="hero-number">01 <span>— PROFILE</span></div>
+        </section>
+
+        <section class="content-section about-section" id="about">
+          <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>Kenali <span>saya.</span></h2></div>
+          <div class="about-grid">
+            <p class="about-lead">Belajar hal baru, memahami proses, dan mengubah pengetahuan menjadi sesuatu yang bermanfaat.</p>
+            <div class="about-detail">
+              <p>Mahasiswa Program Studi Sistem Informasi Bisnis di AMIK Universal Medan yang memiliki ketertarikan pada bidang teknologi informasi dan administrasi bisnis. Memiliki kemampuan dasar dalam mengoperasikan Microsoft Office serta pengalaman berpartisipasi dalam organisasi kampus.</p>
+              <p>Saya senang mempelajari hal baru, mengembangkan keterampilan digital, dan membangun kemampuan komunikasi serta kerja sama tim.</p>
+            </div>
+          </div>
+          <div class="info-strip">
+            <div><span>INSTITUSI</span><strong>AMIK Universal Medan</strong></div>
+            <div><span>PROGRAM</span><strong>Sistem Informasi Bisnis</strong></div>
+            <div><span>JENJANG</span><strong>D4</strong></div>
+          </div>
+        </section>
+
+        <section class="content-section education-section" id="education">
+          <div class="section-heading"><p class="eyebrow">02 / EDUCATION</p><h2>Jejak <span>pendidikan.</span></h2></div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content"><span class="timeline-label">PENDIDIKAN TINGGI</span><h3>AMIK Universal Medan</h3><p>D4 — Sistem Informasi Bisnis</p><small>Medan, Sumatera Utara</small></div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content"><span class="timeline-label">PENDIDIKAN MENENGAH</span><h3>SMA Negeri 1 Tukka</h3><p>Sekolah Menengah Atas</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section experience-section" id="experience">
+          <div class="section-heading"><p class="eyebrow">03 / EXPERIENCE</p><h2>Terus <span>bertumbuh.</span></h2></div>
+          <div class="experience-card">
+            <div class="experience-icon">✳</div>
+            <div><span class="timeline-label">ORGANIZATION</span><h3>Organisasi Kampus</h3><p>Berpartisipasi dalam kegiatan organisasi kampus dan mengembangkan kemampuan komunikasi, kerja sama tim, serta tanggung jawab.</p></div>
+            <span class="experience-tag">PARTICIPANT</span>
+          </div>
+          <p class="honest-note">Saat ini saya berfokus pada pengembangan kompetensi akademik dan keterampilan digital. Saya terbuka untuk kesempatan belajar dan pengalaman baru.</p>
+        </section>
+
+        <section class="content-section skills-section" id="skills">
+          <div class="section-heading"><p class="eyebrow">04 / SKILLS & INTERESTS</p><h2>Hal yang saya <span>kuasai.</span></h2></div>
+          <div class="skills-grid">
+            <article class="skill-card"><div class="skill-symbol">W</div><h3>Microsoft Word</h3><p>Pengolahan dokumen</p></article>
+            <article class="skill-card"><div class="skill-symbol">X</div><h3>Microsoft Excel</h3><p>Pengolahan data dasar</p></article>
+            <article class="skill-card"><div class="skill-symbol">P</div><h3>PowerPoint</h3><p>Penyusunan presentasi</p></article>
+            <article class="skill-card"><div class="skill-symbol">◎</div><h3>Komunikasi</h3><p>Komunikasi interpersonal</p></article>
+            <article class="skill-card"><div class="skill-symbol">↗</div><h3>Teamwork</h3><p>Kolaborasi dan kerja tim</p></article>
+          </div>
+          <div class="interest-row"><span>AREA OF INTEREST</span><div><span>Teknologi Informasi</span><span>Administrasi Bisnis</span><span>Pengelolaan Data</span></div></div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <p class="eyebrow">05 / GET IN TOUCH</p>
+          <h2>Let's create<br><span>something meaningful.</span></h2>
+          <p>Terima kasih telah mengunjungi CV digital saya. Saya terbuka untuk terhubung dan mempelajari kesempatan baru.</p>
+          <a class="contact-email" href="mailto:audikristina234@gmail.com">audikristina234@gmail.com ↗</a>
+          <div class="contact-bottom"><span>AUDI KRISTINA PANJAITAN</span><span>AMIK UNIVERSAL MEDAN</span><span>© <span id="cvYear"></span></span></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
